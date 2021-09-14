@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22C7E5863F2E33CF9D6FE5E7 /* SignalKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SignalKit.podspec; path = ../SignalKit.podspec; sourceTree = "<group>"; };
+		22C7E5863F2E33CF9D6FE5E7 /* SignalKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SignalKit.podspec; path = ../SignalKit.podspec; sourceTree = "<group>"; };
 		56A19FFD0A7F737AD7D9843D /* Pods-SignalKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SignalKit_Tests/Pods-SignalKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SignalKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignalKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,13 +60,95 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6EF04C268586232F74DB3BF9 /* Pods_SignalKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		778620AC26E324020035CAE5 /* Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
+		778620AD26E324020035CAE5 /* ThreadPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadPool.swift; sourceTree = "<group>"; };
+		778620AE26E324020035CAE5 /* Signal_Catch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal_Catch.swift; sourceTree = "<group>"; };
+		778620AF26E324020035CAE5 /* Signal_Materialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal_Materialize.swift; sourceTree = "<group>"; };
+		778620B026E324020035CAE5 /* Signal_Reduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal_Reduce.swift; sourceTree = "<group>"; };
+		778620B126E324020035CAE5 /* Signal_Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal_Merge.swift; sourceTree = "<group>"; };
+		778620B226E324020035CAE5 /* Signal_Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal_Mapping.swift; sourceTree = "<group>"; };
+		778620B326E324020035CAE5 /* Lock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
+		778620B426E324020035CAE5 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		778620B526E324020035CAE5 /* Signal_Dispatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal_Dispatch.swift; sourceTree = "<group>"; };
+		778620B626E324020035CAE5 /* QueueLocalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueLocalObject.swift; sourceTree = "<group>"; };
+		778620B726E324020035CAE5 /* Disposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
+		778620B826E324020035CAE5 /* Multicast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multicast.swift; sourceTree = "<group>"; };
+		778620B926E324020035CAE5 /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
+		778620BA26E324020035CAE5 /* Signal_Single.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal_Single.swift; sourceTree = "<group>"; };
+		778620BB26E324020035CAE5 /* Signal_Take.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal_Take.swift; sourceTree = "<group>"; };
+		778620BC26E324020035CAE5 /* Signal_SideEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal_SideEffects.swift; sourceTree = "<group>"; };
+		778620BD26E324020035CAE5 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		778620BE26E324020035CAE5 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		778620BF26E324020035CAE5 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
+		778620C026E324020035CAE5 /* ValuePipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValuePipe.swift; sourceTree = "<group>"; };
+		778620C126E324020035CAE5 /* Signal_Loop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal_Loop.swift; sourceTree = "<group>"; };
+		778620C226E324020035CAE5 /* Signal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal.swift; sourceTree = "<group>"; };
+		778620C326E324020035CAE5 /* Signal_Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal_Combine.swift; sourceTree = "<group>"; };
+		778620C426E324020035CAE5 /* Signal_Timing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal_Timing.swift; sourceTree = "<group>"; };
+		778620C526E324020035CAE5 /* Signal_Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signal_Meta.swift; sourceTree = "<group>"; };
+		77916F6726E2580900E14639 /* SSignal+Combine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSignal+Combine.m"; sourceTree = "<group>"; };
+		77916F6826E2580900E14639 /* SSignal+Multicast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSignal+Multicast.h"; sourceTree = "<group>"; };
+		77916F6926E2580900E14639 /* SBlockDisposable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBlockDisposable.h; sourceTree = "<group>"; };
+		77916F6A26E2580900E14639 /* SThreadPoolQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SThreadPoolQueue.h; sourceTree = "<group>"; };
+		77916F6B26E2580900E14639 /* STimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STimer.h; sourceTree = "<group>"; };
+		77916F6C26E2580900E14639 /* SAtomic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAtomic.m; sourceTree = "<group>"; };
+		77916F6D26E2580900E14639 /* SSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSignal.h; sourceTree = "<group>"; };
+		77916F6E26E2580900E14639 /* SSignal+Single.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSignal+Single.h"; sourceTree = "<group>"; };
+		77916F6F26E2580900E14639 /* SSignal+Accumulate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSignal+Accumulate.m"; sourceTree = "<group>"; };
+		77916F7026E2580900E14639 /* SBag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBag.m; sourceTree = "<group>"; };
+		77916F7126E2580900E14639 /* SSignal+Meta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSignal+Meta.m"; sourceTree = "<group>"; };
+		77916F7226E2580900E14639 /* SSignal+SideEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSignal+SideEffects.m"; sourceTree = "<group>"; };
+		77916F7326E2580900E14639 /* SMetaDisposable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMetaDisposable.h; sourceTree = "<group>"; };
+		77916F7426E2580900E14639 /* SMulticastSignalManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMulticastSignalManager.h; sourceTree = "<group>"; };
+		77916F7526E2580900E14639 /* SSignal+Dispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSignal+Dispatch.h"; sourceTree = "<group>"; };
+		77916F7626E2580900E14639 /* SSignal+Timing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSignal+Timing.m"; sourceTree = "<group>"; };
+		77916F7726E2580900E14639 /* SSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSubscriber.h; sourceTree = "<group>"; };
+		77916F7826E2580900E14639 /* SSignal+Pipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSignal+Pipe.m"; sourceTree = "<group>"; };
+		77916F7926E2580900E14639 /* SQueueLocalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQueueLocalObject.h; sourceTree = "<group>"; };
+		77916F7A26E2580900E14639 /* SDisposableSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDisposableSet.h; sourceTree = "<group>"; };
+		77916F7B26E2580900E14639 /* SThreadPoolTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SThreadPoolTask.h; sourceTree = "<group>"; };
+		77916F7C26E2580900E14639 /* SDisposable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDisposable.h; sourceTree = "<group>"; };
+		77916F7D26E2580900E14639 /* SSignal+Catch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSignal+Catch.m"; sourceTree = "<group>"; };
+		77916F7E26E2580900E14639 /* SQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQueue.h; sourceTree = "<group>"; };
+		77916F7F26E2580900E14639 /* SVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVariable.m; sourceTree = "<group>"; };
+		77916F8026E2580900E14639 /* SSignal+Take.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSignal+Take.h"; sourceTree = "<group>"; };
+		77916F8126E2580900E14639 /* SSignal+Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSignal+Mapping.m"; sourceTree = "<group>"; };
+		77916F8226E2580900E14639 /* SThreadPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SThreadPool.m; sourceTree = "<group>"; };
+		77916F8326E2580900E14639 /* SAtomic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAtomic.h; sourceTree = "<group>"; };
+		77916F8426E2580900E14639 /* STimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STimer.m; sourceTree = "<group>"; };
+		77916F8526E2580900E14639 /* SThreadPoolQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SThreadPoolQueue.m; sourceTree = "<group>"; };
+		77916F8626E2580900E14639 /* SBlockDisposable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBlockDisposable.m; sourceTree = "<group>"; };
+		77916F8726E2580900E14639 /* SSignal+Multicast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSignal+Multicast.m"; sourceTree = "<group>"; };
+		77916F8826E2580900E14639 /* SSignal+Combine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSignal+Combine.h"; sourceTree = "<group>"; };
+		77916F8926E2580900E14639 /* SSignal+Timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSignal+Timing.h"; sourceTree = "<group>"; };
+		77916F8A26E2580900E14639 /* SSignal+Dispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSignal+Dispatch.m"; sourceTree = "<group>"; };
+		77916F8B26E2580900E14639 /* SMetaDisposable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMetaDisposable.m; sourceTree = "<group>"; };
+		77916F8C26E2580900E14639 /* SMulticastSignalManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMulticastSignalManager.m; sourceTree = "<group>"; };
+		77916F8D26E2580900E14639 /* SSignal+SideEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSignal+SideEffects.h"; sourceTree = "<group>"; };
+		77916F8E26E2580900E14639 /* SSignal+Meta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSignal+Meta.h"; sourceTree = "<group>"; };
+		77916F8F26E2580900E14639 /* SBag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBag.h; sourceTree = "<group>"; };
+		77916F9026E2580900E14639 /* SSignal+Accumulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSignal+Accumulate.h"; sourceTree = "<group>"; };
+		77916F9126E2580900E14639 /* SSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSignal.m; sourceTree = "<group>"; };
+		77916F9226E2580900E14639 /* SSignal+Single.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSignal+Single.m"; sourceTree = "<group>"; };
+		77916F9326E2580900E14639 /* SSignalKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSignalKit.h; sourceTree = "<group>"; };
+		77916F9426E2580900E14639 /* SThreadPoolTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SThreadPoolTask.m; sourceTree = "<group>"; };
+		77916F9526E2580900E14639 /* SDisposableSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDisposableSet.m; sourceTree = "<group>"; };
+		77916F9626E2580900E14639 /* SQueueLocalObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQueueLocalObject.m; sourceTree = "<group>"; };
+		77916F9726E2580900E14639 /* SSignal+Pipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSignal+Pipe.h"; sourceTree = "<group>"; };
+		77916F9826E2580900E14639 /* SSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSubscriber.m; sourceTree = "<group>"; };
+		77916F9926E2580900E14639 /* SThreadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SThreadPool.h; sourceTree = "<group>"; };
+		77916F9A26E2580900E14639 /* SSignal+Take.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SSignal+Take.m"; sourceTree = "<group>"; };
+		77916F9B26E2580900E14639 /* SSignal+Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSignal+Mapping.h"; sourceTree = "<group>"; };
+		77916F9C26E2580900E14639 /* SVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVariable.h; sourceTree = "<group>"; };
+		77916F9D26E2580900E14639 /* SQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQueue.m; sourceTree = "<group>"; };
+		77916F9E26E2580900E14639 /* SSignal+Catch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSignal+Catch.h"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B664448136AAF9470E8A147 /* Pods-SignalKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalKit_Example.release.xcconfig"; path = "Target Support Files/Pods-SignalKit_Example/Pods-SignalKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8B84050BE6CEBA53B683CCDE /* Pods-SignalKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-SignalKit_Tests/Pods-SignalKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A202780602616AAEC6989FE6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A202780602616AAEC6989FE6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CCCD4B0A64ECE84A8A1EF72D /* Pods_SignalKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignalKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82FAA6E645DFB55172CCDCA /* Pods-SignalKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-SignalKit_Example/Pods-SignalKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E2B9F4B8A90FE40E7DA415AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E2B9F4B8A90FE40E7DA415AA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +214,8 @@
 		6003F593195388D20070C39A /* Example for SignalKit */ = {
 			isa = PBXGroup;
 			children = (
+				778620AB26E324020035CAE5 /* Source */,
+				77916F6626E2580900E14639 /* SSignalKit */,
 				6003F59C195388D20070C39A /* SKAppDelegate.h */,
 				6003F59D195388D20070C39A /* SKAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -185,6 +269,102 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		778620AB26E324020035CAE5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				778620BF26E324020035CAE5 /* Atomic.swift */,
+				778620B926E324020035CAE5 /* Bag.swift */,
+				778620B726E324020035CAE5 /* Disposable.swift */,
+				778620B326E324020035CAE5 /* Lock.swift */,
+				778620B826E324020035CAE5 /* Multicast.swift */,
+				778620BD26E324020035CAE5 /* Promise.swift */,
+				778620BE26E324020035CAE5 /* Queue.swift */,
+				778620B626E324020035CAE5 /* QueueLocalObject.swift */,
+				778620AE26E324020035CAE5 /* Signal_Catch.swift */,
+				778620C326E324020035CAE5 /* Signal_Combine.swift */,
+				778620B526E324020035CAE5 /* Signal_Dispatch.swift */,
+				778620C126E324020035CAE5 /* Signal_Loop.swift */,
+				778620B226E324020035CAE5 /* Signal_Mapping.swift */,
+				778620AF26E324020035CAE5 /* Signal_Materialize.swift */,
+				778620B126E324020035CAE5 /* Signal_Merge.swift */,
+				778620C526E324020035CAE5 /* Signal_Meta.swift */,
+				778620B026E324020035CAE5 /* Signal_Reduce.swift */,
+				778620BC26E324020035CAE5 /* Signal_SideEffects.swift */,
+				778620BA26E324020035CAE5 /* Signal_Single.swift */,
+				778620BB26E324020035CAE5 /* Signal_Take.swift */,
+				778620C426E324020035CAE5 /* Signal_Timing.swift */,
+				778620C226E324020035CAE5 /* Signal.swift */,
+				778620AC26E324020035CAE5 /* Subscriber.swift */,
+				778620AD26E324020035CAE5 /* ThreadPool.swift */,
+				778620B426E324020035CAE5 /* Timer.swift */,
+				778620C026E324020035CAE5 /* ValuePipe.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		77916F6626E2580900E14639 /* SSignalKit */ = {
+			isa = PBXGroup;
+			children = (
+				77916F8326E2580900E14639 /* SAtomic.h */,
+				77916F6C26E2580900E14639 /* SAtomic.m */,
+				77916F8F26E2580900E14639 /* SBag.h */,
+				77916F7026E2580900E14639 /* SBag.m */,
+				77916F6926E2580900E14639 /* SBlockDisposable.h */,
+				77916F8626E2580900E14639 /* SBlockDisposable.m */,
+				77916F7C26E2580900E14639 /* SDisposable.h */,
+				77916F7A26E2580900E14639 /* SDisposableSet.h */,
+				77916F9526E2580900E14639 /* SDisposableSet.m */,
+				77916F7326E2580900E14639 /* SMetaDisposable.h */,
+				77916F8B26E2580900E14639 /* SMetaDisposable.m */,
+				77916F7426E2580900E14639 /* SMulticastSignalManager.h */,
+				77916F8C26E2580900E14639 /* SMulticastSignalManager.m */,
+				77916F7E26E2580900E14639 /* SQueue.h */,
+				77916F9D26E2580900E14639 /* SQueue.m */,
+				77916F7926E2580900E14639 /* SQueueLocalObject.h */,
+				77916F9626E2580900E14639 /* SQueueLocalObject.m */,
+				77916F6D26E2580900E14639 /* SSignal.h */,
+				77916F9126E2580900E14639 /* SSignal.m */,
+				77916F9026E2580900E14639 /* SSignal+Accumulate.h */,
+				77916F6F26E2580900E14639 /* SSignal+Accumulate.m */,
+				77916F9E26E2580900E14639 /* SSignal+Catch.h */,
+				77916F7D26E2580900E14639 /* SSignal+Catch.m */,
+				77916F8826E2580900E14639 /* SSignal+Combine.h */,
+				77916F6726E2580900E14639 /* SSignal+Combine.m */,
+				77916F7526E2580900E14639 /* SSignal+Dispatch.h */,
+				77916F8A26E2580900E14639 /* SSignal+Dispatch.m */,
+				77916F9B26E2580900E14639 /* SSignal+Mapping.h */,
+				77916F8126E2580900E14639 /* SSignal+Mapping.m */,
+				77916F8E26E2580900E14639 /* SSignal+Meta.h */,
+				77916F7126E2580900E14639 /* SSignal+Meta.m */,
+				77916F6826E2580900E14639 /* SSignal+Multicast.h */,
+				77916F8726E2580900E14639 /* SSignal+Multicast.m */,
+				77916F9726E2580900E14639 /* SSignal+Pipe.h */,
+				77916F7826E2580900E14639 /* SSignal+Pipe.m */,
+				77916F8D26E2580900E14639 /* SSignal+SideEffects.h */,
+				77916F7226E2580900E14639 /* SSignal+SideEffects.m */,
+				77916F6E26E2580900E14639 /* SSignal+Single.h */,
+				77916F9226E2580900E14639 /* SSignal+Single.m */,
+				77916F8026E2580900E14639 /* SSignal+Take.h */,
+				77916F9A26E2580900E14639 /* SSignal+Take.m */,
+				77916F8926E2580900E14639 /* SSignal+Timing.h */,
+				77916F7626E2580900E14639 /* SSignal+Timing.m */,
+				77916F9326E2580900E14639 /* SSignalKit.h */,
+				77916F7726E2580900E14639 /* SSubscriber.h */,
+				77916F9826E2580900E14639 /* SSubscriber.m */,
+				77916F9926E2580900E14639 /* SThreadPool.h */,
+				77916F8226E2580900E14639 /* SThreadPool.m */,
+				77916F6A26E2580900E14639 /* SThreadPoolQueue.h */,
+				77916F8526E2580900E14639 /* SThreadPoolQueue.m */,
+				77916F7B26E2580900E14639 /* SThreadPoolTask.h */,
+				77916F9426E2580900E14639 /* SThreadPoolTask.m */,
+				77916F6B26E2580900E14639 /* STimer.h */,
+				77916F8426E2580900E14639 /* STimer.m */,
+				77916F9C26E2580900E14639 /* SVariable.h */,
+				77916F7F26E2580900E14639 /* SVariable.m */,
+			);
+			path = SSignalKit;
+			sourceTree = "<group>";
+		};
 		AF79D9522D4817070CB2B691 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +373,6 @@
 				56A19FFD0A7F737AD7D9843D /* Pods-SignalKit_Tests.debug.xcconfig */,
 				8B84050BE6CEBA53B683CCDE /* Pods-SignalKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +427,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = xue03106991;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +440,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -494,12 +677,15 @@
 			baseConfigurationReference = D82FAA6E645DFB55172CCDCA /* Pods-SignalKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SignalKit/SignalKit-Prefix.pch";
 				INFOPLIST_FILE = "SignalKit/SignalKit-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -510,12 +696,15 @@
 			baseConfigurationReference = 8B664448136AAF9470E8A147 /* Pods-SignalKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SignalKit/SignalKit-Prefix.pch";
 				INFOPLIST_FILE = "SignalKit/SignalKit-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};

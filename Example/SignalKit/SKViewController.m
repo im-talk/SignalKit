@@ -7,8 +7,15 @@
 //
 
 #import "SKViewController.h"
+#import <SignalKit/SignalKit.h>
 
 @interface SKViewController ()
+
+@property (nonatomic) SKSignal<NSNumber *, NSString *> *signal;
+
+@property (nonatomic) SKPipe<NSNumber *> *pipe;
+
+@property (nonatomic) SKTimer *timer;
 
 @end
 
@@ -18,6 +25,92 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+//    self.signal = [[[[[[[[SKSignal alloc] initWithGenerator:^id<SKDisposable> _Nullable(SKSubscriber * _Nonnull subscriber) {
+//        [subscriber putNext:@(1)];
+//        [subscriber putNext:@(2)];
+//        [subscriber putNext:@(3)];
+//
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            [subscriber putCompletion];
+//
+//        });
+//        return [[SKBlockDisposable alloc] initWithBlock:^{
+//            NSLog(@"disposed");
+//        }];
+//    }] onStart:^{
+//        NSLog(@"on start");
+//    }] afterNext:^(id  _Nullable value) {
+//        NSLog(@"after next %@", value);
+//    }] onNext:^(id  _Nullable value) {
+//        NSLog(@"on next %@", value);
+//    }] onDispose:^{
+//        NSLog(@"on dispose");
+//    }] onCompletion:^{
+//        NSLog(@"on completion");
+//    }] afterCompletion:^{
+//        NSLog(@"after completion");
+//    }] ;
+//    self.signal = [SKSignal fail:@123];
+//
+//    [self.signal startWithNext:^(NSNumber * _Nullable value) {
+//            NSLog(@"%@", value);
+//        } error:^(id  _Nullable error) {
+//            NSLog(@"%@", error);
+//        } completed:^{
+//            NSLog(@"completed");
+//        }] ;
+
+//    SKQueue *q1 = [[SKQueue alloc] initWithUnderlyingQueue:dispatch_get_main_queue()];
+//    SKQueue *q2 = [SKQueue concurrentBackgroundQueue];
+    
+//    dispatch_async(q2.underlyingQueue, ^{
+////        NSLog(@"q1 %@", q1);
+//        NSLog(@"q2 %@", q2);
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+////            NSLog(@"q1 %@", q1);
+//            NSLog(@"q2 %@", q2);
+//        });
+//    });
+    //    id<SKDisposable> disposable = [[self.signal distinctUntilChangedWithBlock:^BOOL(id  _Nonnull value, id  _Nonnull lastValue) {
+//        return [value isKindOfClass:NSNumber.class] && [lastValue isKindOfClass:NSNumber.class];
+//    }] startWithNext:^(NSNumber * _Nullable value) {
+//        NSLog(@"%@", value);
+//    } error:^(NSString * _Nullable error) {
+//        NSLog(@"%@", error);
+//    } completed:^{
+//        NSLog(@"completed");
+//
+//    }];
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.9 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [disposable dispose];
+//    });
+    
+
+//    _timer = timer;
+    
+    self.signal = [SKSignal signalWithGenerator:^id<SKDisposable> _Nullable(SKSubscriber * _Nonnull subscriber) {
+        [subscriber putNext:@"123"];
+        [subscriber putCompletion];
+        return nil;
+    }];
+    
+    self.signal =  [[self.signal map:^id _Nullable(NSNumber * _Nullable value) {
+        return @(value.integerValue + 123);
+    }] delay:3.0 onQueue:[SKQueue concurrentDefaultQueue]];
+    
+    id<SKDisposable> d = [self.signal startWithNext:^(NSNumber * _Nullable value) {
+        NSLog(@"value %@", value);
+    } error:^(NSString * _Nullable error) {
+        NSLog(@"error");
+    } completed:^{
+        NSLog(@"completion");
+    }];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [d dispose];
+    });
+    
 }
 
 - (void)didReceiveMemoryWarning

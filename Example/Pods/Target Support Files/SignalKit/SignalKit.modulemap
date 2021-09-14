@@ -1,0 +1,6 @@
+framework module SignalKit {
+  umbrella header "SignalKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

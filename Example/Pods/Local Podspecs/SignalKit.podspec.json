@@ -1,0 +1,22 @@
+{
+  "name": "SignalKit",
+  "version": "0.1.0",
+  "summary": "A short description of SignalKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/xue03106991/SignalKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xue03106991": "xueqooy@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/xue03106991/SignalKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SignalKit/Classes/**/*"
+}
