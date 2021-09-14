@@ -9,6 +9,8 @@
 #import "SKViewController.h"
 #import <SignalKit/SignalKit.h>
 
+#import "SKSignal+Take.h"
+
 @interface SKViewController ()
 
 @property (nonatomic) SKSignal<NSNumber *, NSString *> *signal;
@@ -90,27 +92,32 @@
 //    _timer = timer;
     
     self.signal = [SKSignal signalWithGenerator:^id<SKDisposable> _Nullable(SKSubscriber * _Nonnull subscriber) {
-        [subscriber putNext:@"123"];
-        [subscriber putCompletion];
+        [subscriber putNext:@1];
+        [subscriber putNext:@2];
+        [subscriber putNext:@3];
         return nil;
     }];
     
-    self.signal =  [[self.signal map:^id _Nullable(NSNumber * _Nullable value) {
-        return @(value.integerValue + 123);
-    }] delay:3.0 onQueue:[SKQueue concurrentDefaultQueue]];
+    self.signal = [self.signal takeWhile:^SKSignalTakeAction * _Nonnull(NSNumber * _Nullable value) {
+        SKSignalTakeAction *action = [SKSignalTakeAction new];
+        if (value.integerValue == 1) {
+            action.complete = YES;
+        }
+        if (value.integerValue == 3) {
+            action.complete = YES;
+        }
+        return action;
+    }]; 
     
-    id<SKDisposable> d = [self.signal startWithNext:^(NSNumber * _Nullable value) {
+    [self.signal startWithNext:^(NSNumber * _Nullable value) {
         NSLog(@"value %@", value);
     } error:^(NSString * _Nullable error) {
-        NSLog(@"error");
+        NSLog(@"error %@", error);
     } completed:^{
-        NSLog(@"completion");
+        NSLog(@"completed");
     }];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [d dispose];
-    });
-    
+
+
 }
 
 - (void)didReceiveMemoryWarning

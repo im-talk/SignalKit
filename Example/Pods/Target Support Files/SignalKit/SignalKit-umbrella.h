@@ -11,7 +11,6 @@
 #endif
 
 #import "SignalKit.h"
-#import "SKAnnotations.h"
 #import "SKAtomic.h"
 #import "SKBag.h"
 #import "SKBlockDisposable.h"
@@ -23,6 +22,7 @@
 #import "SKSignal+Mapping.h"
 #import "SKSignal+SideEffects.h"
 #import "SKSignal+Single.h"
+#import "SKSignal+Take.h"
 #import "SKSignal+Timing.h"
 #import "SKSignal.h"
 #import "SKSubscriber.h"

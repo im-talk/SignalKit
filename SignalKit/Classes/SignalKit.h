@@ -14,6 +14,7 @@
 #import <SignalKit/SKSignal+SideEffects.h>
 #import <SignalKit/SKSignal+Single.h>
 #import <SignalKit/SKSignal+Timing.h>
+#import <SignalKit/SKSignal+Take.h>
 
 #import <SignalKit/SKDisposable.h>
 #import <SignalKit/SKBlockDisposable.h>

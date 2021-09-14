@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SKAnnotations.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,9 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)atomicWithValue:(ValueType _Nullable)value;
 
-- (ValueType _Nullable)swap:(ValueType _Nullable)newValue SK_WARN_UNUSED_RESULT;
-- (ValueType _Nullable)modify:(id _Nullable (^)(ValueType _Nullable value))block SK_WARN_UNUSED_RESULT;
-- (id _Nullable)with:(id _Nullable (^)(ValueType _Nullable value))block SK_WARN_UNUSED_RESULT;
+- (ValueType _Nullable)swap:(ValueType _Nullable)newValue;
+- (ValueType _Nullable)modify:(id _Nullable (^)(ValueType _Nullable value))block;
+- (id _Nullable)with:(id _Nullable (^)(ValueType _Nullable value))block;
 
 @end
 

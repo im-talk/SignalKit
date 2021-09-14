@@ -177,6 +177,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04640B9B26F050BF004C2A78 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +221,7 @@
 		6003F593195388D20070C39A /* Example for SignalKit */ = {
 			isa = PBXGroup;
 			children = (
+				04640B9B26F050BF004C2A78 /* Feature */,
 				778620AB26E324020035CAE5 /* Source */,
 				77916F6626E2580900E14639 /* SSignalKit */,
 				6003F59C195388D20070C39A /* SKAppDelegate.h */,
