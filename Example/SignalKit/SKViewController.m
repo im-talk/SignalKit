@@ -9,7 +9,6 @@
 #import "SKViewController.h"
 #import <SignalKit/SignalKit.h>
 
-#import "SKSignal+Take.h"
 
 @interface SKViewController ()
 
@@ -18,6 +17,8 @@
 @property (nonatomic) SKPipe<NSNumber *> *pipe;
 
 @property (nonatomic) SKTimer *timer;
+
+@property (nonatomic) SKThreadPool *threadPool;
 
 @end
 
@@ -91,33 +92,68 @@
 
 //    _timer = timer;
     
-    self.signal = [SKSignal signalWithGenerator:^id<SKDisposable> _Nullable(SKSubscriber * _Nonnull subscriber) {
-        [subscriber putNext:@1];
-        [subscriber putNext:@2];
-        [subscriber putNext:@3];
-        return nil;
-    }];
+//    self.signal = [SKSignal signalWithGenerator:^id<SKDisposable> _Nullable(SKSubscriber * _Nonnull subscriber) {
+//        [subscriber putNext:@1];
+//        [subscriber putNext:@2];
+//        [subscriber putNext:@3];
+//        return nil;
+//    }];
+//
+//    self.signal = [self.signal takeWhile:^SKSignalTakeAction * _Nonnull(NSNumber * _Nullable value) {
+//        SKSignalTakeAction *action = [SKSignalTakeAction new];
+//        if (value.integerValue == 1) {
+//            action.complete = YES;
+//        }
+//        if (value.integerValue == 3) {
+//            action.complete = YES;
+//        }
+//        return action;
+//    }];
+//
+//    [self.signal startWithNext:^(NSNumber * _Nullable value) {
+//        NSLog(@"value %@", value);
+//    } error:^(NSString * _Nullable error) {
+//        NSLog(@"error %@", error);
+//    } completed:^{
+//        NSLog(@"completed");
+//    }];
     
-    self.signal = [self.signal takeWhile:^SKSignalTakeAction * _Nonnull(NSNumber * _Nullable value) {
-        SKSignalTakeAction *action = [SKSignalTakeAction new];
-        if (value.integerValue == 1) {
-            action.complete = YES;
-        }
-        if (value.integerValue == 3) {
-            action.complete = YES;
-        }
-        return action;
-    }]; 
-    
-    [self.signal startWithNext:^(NSNumber * _Nullable value) {
-        NSLog(@"value %@", value);
-    } error:^(NSString * _Nullable error) {
-        NSLog(@"error %@", error);
-    } completed:^{
-        NSLog(@"completed");
+    self.threadPool = [[SKThreadPool alloc] initWithThreadCount:3 threadPriority:0.5];
+
+    SKQueue *queue = [SKQueue concurrentDefaultQueue];
+    [queue async:^{
+        self.signal = [SKSignal signalWithGenerator:^id<SKDisposable> _Nullable(SKSubscriber * _Nonnull subscriber) {
+            [queue async:^{
+                [subscriber putNext:@1];
+                [subscriber putCompletion];
+
+            }];
+            return nil;
+        }];
+//        self.signal = [[self.signal runOnQueue:SKQueue.mainQueue] deliverOnMainQueue];
+        self.signal = [[self.signal runOnThreadPool:self.threadPool] deliverOnQueue:SKQueue.mainQueue];
+        
+        [self.signal startWithNext:^(NSNumber * _Nullable value) {
+            NSLog(@"value %@", value);
+        } error:^(NSString * _Nullable error) {
+            NSLog(@"error %@", error);
+        } completed:^{
+            NSLog(@"completed");
+        }];
+
     }];
 
+    
 
+//    SKThreadPoolQueue *queue = [self.threadPool nextQueue];
+//    for (int i = 0; i < 10; i ++) {
+//        SKThreadPoopTask *task = [SKThreadPoopTask taskWithBlock:^(SKThreadPoopTaskState * _Nonnull state) {
+//            [NSThread sleepForTimeInterval:1];
+//            NSLog(@"task %i", i);
+//        }];
+//        [queue addTask:task];
+//    }
+   
 }
 
 - (void)didReceiveMemoryWarning

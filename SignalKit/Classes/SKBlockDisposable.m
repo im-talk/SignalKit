@@ -14,6 +14,10 @@
     void (^_block)(void);
 }
 
++ (instancetype)disposableWithBlock:(void (^)(void))block {
+    return [[self alloc] initWithBlock:block];
+} 
+
 - (instancetype)initWithBlock:(void (^)(void))block {
     self = [super init];
     if (self) {
@@ -22,10 +26,6 @@
     }
     return self;
 }
-
-+ (instancetype)disposableWithBlock:(void (^)(void))block {
-    return [[self alloc] initWithBlock:block];
-} 
 
 - (void)dealloc {
     pthread_mutex_destroy(&_lock);

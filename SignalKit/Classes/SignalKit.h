@@ -15,6 +15,7 @@
 #import <SignalKit/SKSignal+Single.h>
 #import <SignalKit/SKSignal+Timing.h>
 #import <SignalKit/SKSignal+Take.h>
+#import <SignalKit/SKSignal+Dispatch.h>
 
 #import <SignalKit/SKDisposable.h>
 #import <SignalKit/SKBlockDisposable.h>
@@ -27,6 +28,7 @@
 #import <SignalKit/SKPipe.h>
 #import <SignalKit/SKAtomic.h>
 #import <SignalKit/SKBag.h>
+#import <SignalKit/SKThreadPool.h>
 
 
 #endif /* SignalKit_h */

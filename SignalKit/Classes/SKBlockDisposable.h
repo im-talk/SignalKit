@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SKBlockDisposable : NSObject<SKDisposable>
 
-- (instancetype)initWithBlock:(void (^)(void))block NS_DESIGNATED_INITIALIZER;
-
 + (instancetype)disposableWithBlock:(void (^)(void))block;
+
+- (instancetype)initWithBlock:(void (^)(void))block NS_DESIGNATED_INITIALIZER;
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;

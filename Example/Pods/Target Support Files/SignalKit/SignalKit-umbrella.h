@@ -19,6 +19,7 @@
 #import "SKMetaDisposable.h"
 #import "SKPipe.h"
 #import "SKQueue.h"
+#import "SKSignal+Dispatch.h"
 #import "SKSignal+Mapping.h"
 #import "SKSignal+SideEffects.h"
 #import "SKSignal+Single.h"
@@ -27,6 +28,7 @@
 #import "SKSignal.h"
 #import "SKSubscriber.h"
 #import "SKSubscriberInternal.h"
+#import "SKThreadPool.h"
 #import "SKTimer.h"
 
 FOUNDATION_EXPORT double SignalKitVersionNumber;
