@@ -1,0 +1,16 @@
+PODS:
+  - SignalKit (0.1.0)
+
+DEPENDENCIES:
+  - SignalKit (from `../`)
+
+EXTERNAL SOURCES:
+  SignalKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SignalKit: fb6482e31820f331b18f60ae1f66c57760871b69
+
+PODFILE CHECKSUM: f5e34052fa0c3c009104e3281de53aaa070e1279
+
+COCOAPODS: 1.10.0
