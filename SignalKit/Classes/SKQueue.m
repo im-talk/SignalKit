@@ -114,7 +114,7 @@ static atomic_int keyCounter = 0;
 }
 
 - (void)delay:(NSTimeInterval)seconds execute:(void (^)(void))block {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(seconds * NSEC_PER_SEC)), dispatch_get_main_queue(), block);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(seconds * NSEC_PER_SEC)), _underlyingQueue, block);
 }
 
 #pragma mark - Description
