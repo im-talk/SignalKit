@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SKMetaDisposable : NSObject<SKDisposable>
 
+@property (nonatomic, getter=isDisposed, readonly) BOOL disposed;
+
 - (void)setDisposable:(id<SKDisposable>)disposable;
 
 @end

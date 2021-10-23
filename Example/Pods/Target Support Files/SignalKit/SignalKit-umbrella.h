@@ -19,6 +19,7 @@
 #import "SKMetaDisposable.h"
 #import "SKPipe.h"
 #import "SKQueue.h"
+#import "SKSignal+Catch.h"
 #import "SKSignal+Dispatch.h"
 #import "SKSignal+Mapping.h"
 #import "SKSignal+SideEffects.h"

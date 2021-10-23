@@ -8,7 +8,7 @@
 
 #import "SKViewController.h"
 #import <SignalKit/SignalKit.h>
-
+#import "SKSignal+Catch.h"
 
 @interface SKViewController ()
 
@@ -118,30 +118,30 @@
 //        NSLog(@"completed");
 //    }];
     
-    self.threadPool = [[SKThreadPool alloc] initWithThreadCount:3 threadPriority:0.5];
-
-    SKQueue *queue = [SKQueue concurrentDefaultQueue];
-    [queue async:^{
-        self.signal = [SKSignal signalWithGenerator:^id<SKDisposable> _Nullable(SKSubscriber * _Nonnull subscriber) {
-            [queue async:^{
-                [subscriber putNext:@1];
-                [subscriber putCompletion];
-
-            }];
-            return nil;
-        }];
-//        self.signal = [[self.signal runOnQueue:SKQueue.mainQueue] deliverOnMainQueue];
-        self.signal = [[self.signal runOnThreadPool:self.threadPool] deliverOnQueue:SKQueue.mainQueue];
-        
-        [self.signal startWithNext:^(NSNumber * _Nullable value) {
-            NSLog(@"value %@", value);
-        } error:^(NSString * _Nullable error) {
-            NSLog(@"error %@", error);
-        } completed:^{
-            NSLog(@"completed");
-        }];
-
-    }];
+//    self.threadPool = [[SKThreadPool alloc] initWithThreadCount:3 threadPriority:0.5];
+//
+//    SKQueue *queue = [SKQueue concurrentDefaultQueue];
+//    [queue async:^{
+//        self.signal = [SKSignal signalWithGenerator:^id<SKDisposable> _Nullable(SKSubscriber * _Nonnull subscriber) {
+//            [queue async:^{
+//                [subscriber putNext:@1];
+//                [subscriber putCompletion];
+//
+//            }];
+//            return nil;
+//        }];
+////        self.signal = [[self.signal runOnQueue:SKQueue.mainQueue] deliverOnMainQueue];
+//        self.signal = [[self.signal runOnThreadPool:self.threadPool] deliverOnQueue:SKQueue.mainQueue];
+//
+//        [self.signal startWithNext:^(NSNumber * _Nullable value) {
+//            NSLog(@"value %@", value);
+//        } error:^(NSString * _Nullable error) {
+//            NSLog(@"error %@", error);
+//        } completed:^{
+//            NSLog(@"completed");
+//        }];
+//
+//    }];
 
     
 
@@ -154,6 +154,30 @@
 //        [queue addTask:task];
 //    }
    
+//    static NSUInteger count = 0;
+//    self.signal = [SKSignal signalWithGenerator:^id<SKDisposable> _Nullable(SKSubscriber * _Nonnull subscriber) {
+//        [subscriber putNext:@(count++)];
+//        [subscriber putError:@"error"];
+//        return nil;
+//    }];
+//    
+//    self.signal = [self.signal retryIf:^BOOL(NSString * _Nullable error, NSUInteger currentRetryCount) {
+//        return currentRetryCount < 5;
+//    } delayIncrement:1.0 maxDelay:3.0 onQueue:SKQueue.mainQueue];
+//    
+//    id<SKDisposable>disposable = [self.signal startWithNext:^(NSNumber * _Nullable value) {
+//        NSLog(@"value %@", value);
+//    } error:^(NSString * _Nullable error) {
+//        NSLog(@"error %@", error);
+//    } completed:^{
+//        NSLog(@"completed");
+//    }];
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [disposable dispose];
+//    });
+
+    
 }
 
 - (void)didReceiveMemoryWarning

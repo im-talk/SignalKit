@@ -54,6 +54,7 @@
     pthread_mutex_lock(&_lock);
     if (!_disposed) {
         disposable = _disposable;
+        _disposable = nil;
         _disposed = YES;
     }
     pthread_mutex_unlock(&_lock);
@@ -61,6 +62,14 @@
     if (disposable) {
         [disposable dispose];
     }
+}
+
+- (BOOL)isDisposed {
+    BOOL dispose = NO;
+    pthread_mutex_lock(&_lock);
+    dispose = _disposed;
+    pthread_mutex_unlock(&_lock);
+    return dispose;
 }
 
 @end

@@ -7,157 +7,161 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06F9ED77EBA745F853BF808E723F36BC /* SKMetaDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A6DFE4E8247B06ABEF6925241D92150 /* SKMetaDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0BFB8935AA1312E23C60586A3754C393 /* SKSignal+Dispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0CE1FB69F186C6DB5A8D55DDE29BA1 /* SKSignal+Dispatch.m */; };
-		0C658552320764A9AC9F546867C3E926 /* SKAtomic.h in Headers */ = {isa = PBXBuildFile; fileRef = BA61567B7FB7F587775E5754E447F26E /* SKAtomic.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DBFDB0BE55ECF15C1F84AFF11280740 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		0FC8FCDA34E73330BB3167B638B57600 /* SKSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = A112F12610FB92029B844FF295956339 /* SKSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		12EF159FC2DEF9ECD86835B8795BB1E7 /* SKSignal+Single.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCBD9D8FE875C1FC22D276659421C30 /* SKSignal+Single.m */; };
-		1AFA752916B4D4E0B8D88B5D5002E34F /* SKDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DB1C93DF8E8F182060416324067A581 /* SKDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C08E256F469D3B15146D3851C19319C /* SignalKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E72735972E7C48BE9D36332767606E31 /* SignalKit-dummy.m */; };
+		06E225BA6C238C08A2E3F4FE06C78A0F /* SKSignal+Dispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D2B4CA4D4B61C57369370881D7DE69 /* SKSignal+Dispatch.m */; };
+		0C6DDB7E4663E4C4308EA2F6F3C59976 /* SKSignal+Take.h in Headers */ = {isa = PBXBuildFile; fileRef = B608D153D817EA6709BC432EFB2A500A /* SKSignal+Take.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19EE66C2D8C08FE544D94C6AD8B1130A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		1DFB05586C1D67C33350B39B5DBECA06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1E245717EA52CD7421D226FFFC646108 /* SKSignal+Take.m in Sources */ = {isa = PBXBuildFile; fileRef = E565029AF551E0A64D6FF22EC2C1EEA3 /* SKSignal+Take.m */; };
 		1F6F97F43F30FACDC23AB7B3EB40379D /* Pods-SignalKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 800138C1E3DAA976D937B82FF5B20CC3 /* Pods-SignalKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		221768BE8F1193DA9186B573F3D47EC8 /* SKBag.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FF25D5D749D3FB62D76649FFC32E68C /* SKBag.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C9F4F8220563BEFEA0BEAB44E70A444 /* SKSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 325C6811C5FE9DCAF9EC16AFF38B0201 /* SKSignal.m */; };
+		1FDFEF502E780274DD53EFD18BF507A7 /* SKSignal+SideEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF324A70D2DF5E32E46C2C00C9A5153 /* SKSignal+SideEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2214D5EB79A857CCF67626DBE9F14999 /* SKTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = F8B04C34FB8DE98741286E6CC48040E4 /* SKTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		228BEB66A5D5283D57F463224DC9240E /* SKSubscriberInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B4EBFBE237389B928265FFB1D9E2DF8 /* SKSubscriberInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		314A47CE3A1A196D2CC9BC459CF3E2B5 /* SKTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C5282CB7646791E2C3C2228387FDFF6 /* SKTimer.m */; };
+		327609837F3EB9D2A1FD5337BB7B085C /* SKSignal+Mapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D911B4C6C331BBA91D99B74F99693C /* SKSignal+Mapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36A400D469F493F399DBB613BBBBC442 /* SKPipe.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA6434654B76B1BA7ADD867E68EE1F /* SKPipe.m */; };
 		38704BC354F84185413E3288B411897E /* Pods-SignalKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E47D153EC32935498A16D514D83DD5A5 /* Pods-SignalKit_Example-dummy.m */; };
-		38E13017A542EB5C6F67F0D7A7BAFF2F /* SKSignal+Dispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 06BA00C0048F2C95B011AC4E36A7F981 /* SKSignal+Dispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		418E3FD8B7601545DFBF138D489D51A9 /* SKBag.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B32AE326D507CD1ACA6D26BF623327 /* SKBag.m */; };
-		445952002C3871A936CE2811200636F3 /* SignalKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CAF74A2AE1D44E339C2E813C1B32B43 /* SignalKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52447317D9E14819A154275562AD62AF /* SKSignal+SideEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = CBDF3F776415692B369951B19BE9C6C1 /* SKSignal+SideEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		538394F413C04FDFCB652EC0780567A4 /* SKThreadPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 869F1F6AB15579CBD83363DC369E5AB2 /* SKThreadPool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B2234BB31890D92A0D759F2DC09BFDD /* SKSignal+Timing.h in Headers */ = {isa = PBXBuildFile; fileRef = C01A2011C6DB3AF001C7D02B1AB42FB4 /* SKSignal+Timing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70DB1ADF1D4A18C2DE20CEF361C2A92D /* SKSubscriberInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C7588A18B5685E9E034249CFFC0011 /* SKSubscriberInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78A08CB21CB05907A457EDBA89B706E0 /* SKTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 651034FA8DA1EF33A55F0FF1EED070AE /* SKTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A7BAF594DD84925153D680D72EE585B /* SKSignal+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 101B6DE9C59CFB6FBCF0FDBA5D3F60C6 /* SKSignal+Mapping.m */; };
-		7FAD9F52050DC337D2643105E7C6D20B /* SKSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = CE0DC330F71CCD187FCC2F1925108E6F /* SKSubscriber.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80C758A6BD90BA620F495CE37D8D10CF /* SKSignal+Take.m in Sources */ = {isa = PBXBuildFile; fileRef = B4887E16F63D5134A931D65CBBA741F9 /* SKSignal+Take.m */; };
-		90E50D5CA9127A6939D55DF0D7950A50 /* SKSignal+Mapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 514F0A563A03183D0F8A147CA450815E /* SKSignal+Mapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97FCC21B1BE1DF4C93622EB6CE63949F /* SKQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DB741BD75A05EF7AD958EA3715A197 /* SKQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A21DEDBE241A6E3FEC0566173D75F90A /* SKThreadPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C396CCBA97B202C9DB037C8DFE25FD /* SKThreadPool.m */; };
-		A863D9AC331A93ED9CA632174D8BAE18 /* SKSignal+Single.h in Headers */ = {isa = PBXBuildFile; fileRef = 655F0F2B13B4C008A97AFE95778A5704 /* SKSignal+Single.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABA16E7AD75A5E962EC435F3136F14F5 /* SKAtomic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0108AC111241576674FD8A787C85489B /* SKAtomic.m */; };
-		AD4B1DDD686DC87B31A999AD23EA044B /* SKTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F9AAEFB4BC22756838FD6F456BDF0B /* SKTimer.m */; };
+		3C5BE3F0DF64273F3C6921EDE2EC536F /* SKBlockDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C628393ABE40D2750CED6C81BCFCC3 /* SKBlockDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41E10848484221CF4170E610691F393C /* SKMetaDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = EED1643EC2F2C45099A706BBFC22A1BA /* SKMetaDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47FC6B3E5EC66C625F492B9F7ED58E89 /* SKCompoundDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2136F689CBE78244502220A4EEC14505 /* SKCompoundDisposable.m */; };
+		4AC68038F48F473DCA9F256F86EC0DB3 /* SKSignal+Single.m in Sources */ = {isa = PBXBuildFile; fileRef = D62FF23DA3F7499720593C54F0B6DB6C /* SKSignal+Single.m */; };
+		4CE40542B8994AB00C2208FB78D8B707 /* SKDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8FA5FC4FC065776C44135DCF032F93 /* SKDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DDC02141C42387126987C6E6C1C2983 /* SKSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 60291D887E7800B6B60FFB46C5F59359 /* SKSubscriber.m */; };
+		75560E9F2C55965116F4CAB77CCEC0A1 /* SKSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA01EEBD52DDA7993DBAB45AAE50F6D /* SKSignal.m */; };
+		7ECCD5E7F6AE821033D606F603103232 /* SKQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E131630E5833C724F6234D194EF4A66 /* SKQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8227060FCEFC802A2C9BC5356B6E0FAF /* SKBag.h in Headers */ = {isa = PBXBuildFile; fileRef = B171BEA01CAE7E18BD2DC41D6C185D2E /* SKBag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A149C46280098FB77F26C5A5C11CD14 /* SKSignal+Dispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 16AE7524B666CD58CCDA2AE5AD1582DC /* SKSignal+Dispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC4FFAB66178FD870C17BDB93943DA5 /* SKAtomic.h in Headers */ = {isa = PBXBuildFile; fileRef = EA3B80A163E55E16FC8958465EEE0B67 /* SKAtomic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		915206A4BE87F892BF9F9E6372F5781E /* SKPipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EEF7D3D48DFB7D5CCBC6C6FC735678E /* SKPipe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91C63C09E84A8C39C412766CC703BF10 /* SKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 352010624B72FE14A11ACB3627BD31B1 /* SKQueue.m */; };
+		95988ABB117098CD95D9D9611F590245 /* SignalKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD97571531F4A3C8BFEAEBB6443EB90 /* SignalKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96A2B01E532B0720F5E92515568D4CBE /* SKBag.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424BC3BE12F75A1EE3B5C417524B9DA /* SKBag.m */; };
+		991D65B0BD58F2F12A394544E31CB271 /* SKSignal+Catch.m in Sources */ = {isa = PBXBuildFile; fileRef = C25F2E641F1C4CC5621F4D815889C7BC /* SKSignal+Catch.m */; };
+		A0CA1A7F669AB384419C0F75D924696E /* SKSignal+Single.h in Headers */ = {isa = PBXBuildFile; fileRef = 34EF08C057D26710858DB692BA39F388 /* SKSignal+Single.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3B479E36A7E9B37E40D8DAF3290159C /* SignalKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FA877DB9FF454AA510A42BD1B4039A64 /* SignalKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4F2B2EDEADB8B54EEB466A466C20B1A /* SKSignal+Catch.h in Headers */ = {isa = PBXBuildFile; fileRef = E3BE8283CBB0C54634BF6EA73821A39C /* SKSignal+Catch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A600E49676023F26E25EAAB82B3C3385 /* SKSignal+Timing.m in Sources */ = {isa = PBXBuildFile; fileRef = 14D6EE22A61CEF9C7F62D6FCE0F22456 /* SKSignal+Timing.m */; };
+		A8E5360B6A7D5BEC64043497EF1EED2B /* SignalKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8091230B1FBC65AC96D7818B953D05 /* SignalKit-dummy.m */; };
 		B6A5D63BF9950D394944037370BBF76C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BEC1738A9FCE2E02D0E9ECC83BC9DA52 /* SKCompoundDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A1B9FD417A3044F6D7B0EC2CD51A222 /* SKCompoundDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5DA420BDC418EA9B8603C0905790B5B /* SKSignal+Timing.m in Sources */ = {isa = PBXBuildFile; fileRef = 294B88501BB571E5F9C9BAE2865F7980 /* SKSignal+Timing.m */; };
-		CEC528E5DA2D06C822A394AAD787F893 /* SKCompoundDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = E55D60A1C219749A99F080A5CD5FC0D1 /* SKCompoundDisposable.m */; };
-		D303533E1B95B6F858A80A21002D18F9 /* SKSignal+Take.h in Headers */ = {isa = PBXBuildFile; fileRef = 4041A4D5BE87B5D04868F70B8D48795C /* SKSignal+Take.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3CA60D8688FADF3FACA6848A2167AFE /* SKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2A123F765AABD19625D9C5A17B7AAF /* SKQueue.m */; };
-		D6D0D2D2A0BA77DBA3AA11146F418A20 /* SKPipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FBCD76988B1F480011CC9A247E7F9B3 /* SKPipe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7F2044D646837FA3B172134BEDC7FA9 /* SKSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = C5F02CB6EE800D5B1AC8E40E7DAB2D80 /* SKSubscriber.m */; };
+		B79706EBE8FD9842EB41F4BDC5E5D916 /* SKBlockDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DDB52C041EAB713E88B94BC5FBCF28 /* SKBlockDisposable.m */; };
+		C4A4F6B7E7861395C7E654E61832C658 /* SKSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ADB143A3A5FF107A35819B31647B436 /* SKSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9EAA60D35190A076AD6234F579A9A38 /* SKSignal+SideEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = B180B4F1D80B6DDA3A9218DA305531B2 /* SKSignal+SideEffects.m */; };
 		DDE36842098C669AE037EF62431A27FC /* Pods-SignalKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EADED60DF900536FA0290D56126A7ADF /* Pods-SignalKit_Tests-dummy.m */; };
-		E22270CAE379A07FD6C9B0D383730D8D /* SignalKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A213200A08B8D93BE41E3F635FF2A7A8 /* SignalKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E58FA7B5902A15607472B1B780DB4ACC /* SKSignal+SideEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCEACF7A6B781FA59C17887AD05A221 /* SKSignal+SideEffects.m */; };
+		DE666A3ADE6529E7ACF15E36CA61FDC2 /* SKThreadPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E622926AA242A59AED7F25ED1D3A419 /* SKThreadPool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E18CA4EBF77B096DE82DBDDD1B2AA105 /* SKCompoundDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF626BD0655970DEE9FA3349E9290DB /* SKCompoundDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E67B18D2FCC98985C162A902D8A51128 /* SKSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B6B448DBD457ED5B4C4C972F00AE105 /* SKSubscriber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E83B493682548972844F539BF4CAFC3E /* Pods-SignalKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF71E1B41BB6794B945DF0829B09AB80 /* Pods-SignalKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E96F66BC3B4977046158E96B7BB7CB11 /* SKBlockDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BA10DA3C4DE816E2744630248BF0C8 /* SKBlockDisposable.m */; };
-		EA5DBCC86AC283757AF2870DA255239A /* SKPipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 022ABDCCCFDBEE242D13860ACFE2B33A /* SKPipe.m */; };
-		F79D9690C70E0D9B2E252B37EBD8CB82 /* SKBlockDisposable.h in Headers */ = {isa = PBXBuildFile; fileRef = A7AE2F954C9A0F716AE7AC08AE9FD1BD /* SKBlockDisposable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE629DA41A761607BF7F348E0798A18F /* SKMetaDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E19EA2AE8936432CA870DBDADD007A /* SKMetaDisposable.m */; };
+		E96E0950CB825E274BB9483360145C01 /* SKSignal+Timing.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCF991A4645DEBE5DB314D98986C682 /* SKSignal+Timing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC006FE945085A52B2C6B2AD8AFB5EED /* SKThreadPool.m in Sources */ = {isa = PBXBuildFile; fileRef = D266329A6147BFF0EF095F1D9BC633A8 /* SKThreadPool.m */; };
+		F1B3E8418B4E20C8182D0D9193B4D69C /* SKSignal+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7D78D306A443E6B41B817B8F1C5C62 /* SKSignal+Mapping.m */; };
+		F5B45E330A9B3236E0975DCF6B755ECC /* SKAtomic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A44F7084BB1A48AE522EF0E8C2539B7 /* SKAtomic.m */; };
+		FA44DDC6CC900A6AB0E91D70A4078895 /* SKMetaDisposable.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1056F5D4E1088894F6EF8D809B3CB0 /* SKMetaDisposable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0DAA9CF53E79A44EDC6D08EDAE5B6EEE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD9E694EF983F10C04917FD59E58F316;
-			remoteInfo = SignalKit;
-		};
-		7EBB6EDDB1BBDBEB7D070F26200E61C3 /* PBXContainerItemProxy */ = {
+		746DEB92FF0437E27581116620572605 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 741350860289F4463B83CBBDC97246BE;
 			remoteInfo = "Pods-SignalKit_Example";
 		};
+		F3981CA36278C4D553DEAA27FF3E60E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD9E694EF983F10C04917FD59E58F316;
+			remoteInfo = SignalKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0108AC111241576674FD8A787C85489B /* SKAtomic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKAtomic.m; path = SignalKit/Classes/SKAtomic.m; sourceTree = "<group>"; };
-		022ABDCCCFDBEE242D13860ACFE2B33A /* SKPipe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKPipe.m; path = SignalKit/Classes/SKPipe.m; sourceTree = "<group>"; };
-		06BA00C0048F2C95B011AC4E36A7F981 /* SKSignal+Dispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKSignal+Dispatch.h"; path = "SignalKit/Classes/SKSignal+Dispatch.h"; sourceTree = "<group>"; };
+		0424BC3BE12F75A1EE3B5C417524B9DA /* SKBag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKBag.m; path = SignalKit/Classes/SKBag.m; sourceTree = "<group>"; };
 		0D6EADB8BD7EABFDB3CCBA985C6AD043 /* Pods-SignalKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		101B6DE9C59CFB6FBCF0FDBA5D3F60C6 /* SKSignal+Mapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKSignal+Mapping.m"; path = "SignalKit/Classes/SKSignal+Mapping.m"; sourceTree = "<group>"; };
-		1DB1C93DF8E8F182060416324067A581 /* SKDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKDisposable.h; path = SignalKit/Classes/SKDisposable.h; sourceTree = "<group>"; };
-		294B88501BB571E5F9C9BAE2865F7980 /* SKSignal+Timing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKSignal+Timing.m"; path = "SignalKit/Classes/SKSignal+Timing.m"; sourceTree = "<group>"; };
-		30C396CCBA97B202C9DB037C8DFE25FD /* SKThreadPool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKThreadPool.m; path = SignalKit/Classes/SKThreadPool.m; sourceTree = "<group>"; };
-		325C6811C5FE9DCAF9EC16AFF38B0201 /* SKSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKSignal.m; path = SignalKit/Classes/SKSignal.m; sourceTree = "<group>"; };
+		14D6EE22A61CEF9C7F62D6FCE0F22456 /* SKSignal+Timing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKSignal+Timing.m"; path = "SignalKit/Classes/SKSignal+Timing.m"; sourceTree = "<group>"; };
+		16AE7524B666CD58CCDA2AE5AD1582DC /* SKSignal+Dispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKSignal+Dispatch.h"; path = "SignalKit/Classes/SKSignal+Dispatch.h"; sourceTree = "<group>"; };
+		1DE13C2A48A248E38BF9D92C99365D38 /* SignalKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SignalKit.debug.xcconfig; sourceTree = "<group>"; };
+		1E622926AA242A59AED7F25ED1D3A419 /* SKThreadPool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKThreadPool.h; path = SignalKit/Classes/SKThreadPool.h; sourceTree = "<group>"; };
+		2136F689CBE78244502220A4EEC14505 /* SKCompoundDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKCompoundDisposable.m; path = SignalKit/Classes/SKCompoundDisposable.m; sourceTree = "<group>"; };
+		2C8FA5FC4FC065776C44135DCF032F93 /* SKDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKDisposable.h; path = SignalKit/Classes/SKDisposable.h; sourceTree = "<group>"; };
+		2EEF7D3D48DFB7D5CCBC6C6FC735678E /* SKPipe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKPipe.h; path = SignalKit/Classes/SKPipe.h; sourceTree = "<group>"; };
+		2FCF991A4645DEBE5DB314D98986C682 /* SKSignal+Timing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKSignal+Timing.h"; path = "SignalKit/Classes/SKSignal+Timing.h"; sourceTree = "<group>"; };
+		34EF08C057D26710858DB692BA39F388 /* SKSignal+Single.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKSignal+Single.h"; path = "SignalKit/Classes/SKSignal+Single.h"; sourceTree = "<group>"; };
+		352010624B72FE14A11ACB3627BD31B1 /* SKQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKQueue.m; path = SignalKit/Classes/SKQueue.m; sourceTree = "<group>"; };
 		35275859ADD5DE23409F16397EF42411 /* Pods-SignalKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3A6DFE4E8247B06ABEF6925241D92150 /* SKMetaDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKMetaDisposable.h; path = SignalKit/Classes/SKMetaDisposable.h; sourceTree = "<group>"; };
-		3E74C37A6B691F6060A2D7229A0313CE /* SignalKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SignalKit.modulemap; sourceTree = "<group>"; };
-		4041A4D5BE87B5D04868F70B8D48795C /* SKSignal+Take.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKSignal+Take.h"; path = "SignalKit/Classes/SKSignal+Take.h"; sourceTree = "<group>"; };
-		42DB741BD75A05EF7AD958EA3715A197 /* SKQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKQueue.h; path = SignalKit/Classes/SKQueue.h; sourceTree = "<group>"; };
-		4A1B9FD417A3044F6D7B0EC2CD51A222 /* SKCompoundDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKCompoundDisposable.h; path = SignalKit/Classes/SKCompoundDisposable.h; sourceTree = "<group>"; };
-		4A2080C7481594CC108AD418C3DB583A /* SignalKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SignalKit.release.xcconfig; sourceTree = "<group>"; };
-		4B2A123F765AABD19625D9C5A17B7AAF /* SKQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKQueue.m; path = SignalKit/Classes/SKQueue.m; sourceTree = "<group>"; };
-		514F0A563A03183D0F8A147CA450815E /* SKSignal+Mapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKSignal+Mapping.h"; path = "SignalKit/Classes/SKSignal+Mapping.h"; sourceTree = "<group>"; };
-		605CD1BC48C67A47C182FC97B2D4A8A1 /* SignalKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SignalKit-Info.plist"; sourceTree = "<group>"; };
-		651034FA8DA1EF33A55F0FF1EED070AE /* SKTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKTimer.h; path = SignalKit/Classes/SKTimer.h; sourceTree = "<group>"; };
-		655F0F2B13B4C008A97AFE95778A5704 /* SKSignal+Single.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKSignal+Single.h"; path = "SignalKit/Classes/SKSignal+Single.h"; sourceTree = "<group>"; };
-		6CAF74A2AE1D44E339C2E813C1B32B43 /* SignalKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SignalKit.h; path = SignalKit/Classes/SignalKit.h; sourceTree = "<group>"; };
+		3ADB143A3A5FF107A35819B31647B436 /* SKSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKSignal.h; path = SignalKit/Classes/SKSignal.h; sourceTree = "<group>"; };
+		3F70C58DD40E4AB7764523588C4B7F3B /* SignalKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SignalKit-Info.plist"; sourceTree = "<group>"; };
+		46D911B4C6C331BBA91D99B74F99693C /* SKSignal+Mapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKSignal+Mapping.h"; path = "SignalKit/Classes/SKSignal+Mapping.h"; sourceTree = "<group>"; };
+		5BF324A70D2DF5E32E46C2C00C9A5153 /* SKSignal+SideEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKSignal+SideEffects.h"; path = "SignalKit/Classes/SKSignal+SideEffects.h"; sourceTree = "<group>"; };
+		60291D887E7800B6B60FFB46C5F59359 /* SKSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKSubscriber.m; path = SignalKit/Classes/SKSubscriber.m; sourceTree = "<group>"; };
+		6A44F7084BB1A48AE522EF0E8C2539B7 /* SKAtomic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKAtomic.m; path = SignalKit/Classes/SKAtomic.m; sourceTree = "<group>"; };
+		6B6B448DBD457ED5B4C4C972F00AE105 /* SKSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKSubscriber.h; path = SignalKit/Classes/SKSubscriber.h; sourceTree = "<group>"; };
+		6C5282CB7646791E2C3C2228387FDFF6 /* SKTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKTimer.m; path = SignalKit/Classes/SKTimer.m; sourceTree = "<group>"; };
+		6E131630E5833C724F6234D194EF4A66 /* SKQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKQueue.h; path = SignalKit/Classes/SKQueue.h; sourceTree = "<group>"; };
 		6E873BA6D8F6B3FAA0C8AC0C9E8CB3D7 /* Pods-SignalKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		6EBB50D1195196AD98DB6D90214429A6 /* Pods-SignalKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SignalKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6F7340A8123B588A30B4B1B7CF6216F5 /* Pods-SignalKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		752E5C46A9ADA767E1BA581DE159D694 /* Pods-SignalKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SignalKit_Tests.modulemap"; sourceTree = "<group>"; };
-		7FBCD76988B1F480011CC9A247E7F9B3 /* SKPipe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKPipe.h; path = SignalKit/Classes/SKPipe.h; sourceTree = "<group>"; };
+		7A7D78D306A443E6B41B817B8F1C5C62 /* SKSignal+Mapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKSignal+Mapping.m"; path = "SignalKit/Classes/SKSignal+Mapping.m"; sourceTree = "<group>"; };
 		800138C1E3DAA976D937B82FF5B20CC3 /* Pods-SignalKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SignalKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		81CCB6D9EBEDD957506B6E9A51CF928B /* Pods-SignalKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SignalKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		869F1F6AB15579CBD83363DC369E5AB2 /* SKThreadPool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKThreadPool.h; path = SignalKit/Classes/SKThreadPool.h; sourceTree = "<group>"; };
-		88B32AE326D507CD1ACA6D26BF623327 /* SKBag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKBag.m; path = SignalKit/Classes/SKBag.m; sourceTree = "<group>"; };
 		8A8905B4753163CEA502BE558E973EBC /* Pods-SignalKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8B0CE1FB69F186C6DB5A8D55DDE29BA1 /* SKSignal+Dispatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKSignal+Dispatch.m"; path = "SignalKit/Classes/SKSignal+Dispatch.m"; sourceTree = "<group>"; };
-		8FCBD9D8FE875C1FC22D276659421C30 /* SKSignal+Single.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKSignal+Single.m"; path = "SignalKit/Classes/SKSignal+Single.m"; sourceTree = "<group>"; };
-		8FF25D5D749D3FB62D76649FFC32E68C /* SKBag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKBag.h; path = SignalKit/Classes/SKBag.h; sourceTree = "<group>"; };
-		9789E73F94D5E071860F2211B28A27D9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9992077E9C04B358D69A46F0BAB4A1F7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8CF626BD0655970DEE9FA3349E9290DB /* SKCompoundDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKCompoundDisposable.h; path = SignalKit/Classes/SKCompoundDisposable.h; sourceTree = "<group>"; };
+		98ADB43BC9939CC590140079BD6828FE /* SignalKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SignalKit.modulemap; sourceTree = "<group>"; };
+		9914390B1CF6EA28DAA579E90E45C2CA /* SignalKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignalKit-prefix.pch"; sourceTree = "<group>"; };
+		9B4EBFBE237389B928265FFB1D9E2DF8 /* SKSubscriberInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKSubscriberInternal.h; path = SignalKit/Classes/SKSubscriberInternal.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0A2495F5AE761D637DE62A4FA27896 /* Pods_SignalKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SignalKit_Example.framework; path = "Pods-SignalKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0C7588A18B5685E9E034249CFFC0011 /* SKSubscriberInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKSubscriberInternal.h; path = SignalKit/Classes/SKSubscriberInternal.h; sourceTree = "<group>"; };
-		A112F12610FB92029B844FF295956339 /* SKSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKSignal.h; path = SignalKit/Classes/SKSignal.h; sourceTree = "<group>"; };
-		A1F9AAEFB4BC22756838FD6F456BDF0B /* SKTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKTimer.m; path = SignalKit/Classes/SKTimer.m; sourceTree = "<group>"; };
-		A213200A08B8D93BE41E3F635FF2A7A8 /* SignalKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignalKit-umbrella.h"; sourceTree = "<group>"; };
-		A7AE2F954C9A0F716AE7AC08AE9FD1BD /* SKBlockDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKBlockDisposable.h; path = SignalKit/Classes/SKBlockDisposable.h; sourceTree = "<group>"; };
+		A197F67374601558EB6649EE5364F0EF /* SignalKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SignalKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7D22E02EB5D7FA3C165349D99923AD4 /* Pods-SignalKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B4887E16F63D5134A931D65CBBA741F9 /* SKSignal+Take.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKSignal+Take.m"; path = "SignalKit/Classes/SKSignal+Take.m"; sourceTree = "<group>"; };
-		BA61567B7FB7F587775E5754E447F26E /* SKAtomic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKAtomic.h; path = SignalKit/Classes/SKAtomic.h; sourceTree = "<group>"; };
+		B171BEA01CAE7E18BD2DC41D6C185D2E /* SKBag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKBag.h; path = SignalKit/Classes/SKBag.h; sourceTree = "<group>"; };
+		B180B4F1D80B6DDA3A9218DA305531B2 /* SKSignal+SideEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKSignal+SideEffects.m"; path = "SignalKit/Classes/SKSignal+SideEffects.m"; sourceTree = "<group>"; };
+		B608D153D817EA6709BC432EFB2A500A /* SKSignal+Take.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKSignal+Take.h"; path = "SignalKit/Classes/SKSignal+Take.h"; sourceTree = "<group>"; };
 		BC06861527533326DC0D4A99055196E9 /* Pods_SignalKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SignalKit_Tests.framework; path = "Pods-SignalKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE6EF805DF8AF4399E977C67F837E215 /* Pods-SignalKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SignalKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BF71E1B41BB6794B945DF0829B09AB80 /* Pods-SignalKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SignalKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		C01A2011C6DB3AF001C7D02B1AB42FB4 /* SKSignal+Timing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKSignal+Timing.h"; path = "SignalKit/Classes/SKSignal+Timing.h"; sourceTree = "<group>"; };
-		C5F02CB6EE800D5B1AC8E40E7DAB2D80 /* SKSubscriber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKSubscriber.m; path = SignalKit/Classes/SKSubscriber.m; sourceTree = "<group>"; };
-		C7BA10DA3C4DE816E2744630248BF0C8 /* SKBlockDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKBlockDisposable.m; path = SignalKit/Classes/SKBlockDisposable.m; sourceTree = "<group>"; };
-		CBDF3F776415692B369951B19BE9C6C1 /* SKSignal+SideEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKSignal+SideEffects.h"; path = "SignalKit/Classes/SKSignal+SideEffects.h"; sourceTree = "<group>"; };
-		CE0DC330F71CCD187FCC2F1925108E6F /* SKSubscriber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKSubscriber.h; path = SignalKit/Classes/SKSubscriber.h; sourceTree = "<group>"; };
+		BFA01EEBD52DDA7993DBAB45AAE50F6D /* SKSignal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKSignal.m; path = SignalKit/Classes/SKSignal.m; sourceTree = "<group>"; };
+		C1802785A071DF8E551544CE597E1696 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C25F2E641F1C4CC5621F4D815889C7BC /* SKSignal+Catch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKSignal+Catch.m"; path = "SignalKit/Classes/SKSignal+Catch.m"; sourceTree = "<group>"; };
+		C6A8A27325008919FAD3FB1D828893AF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CBD97571531F4A3C8BFEAEBB6443EB90 /* SignalKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignalKit-umbrella.h"; sourceTree = "<group>"; };
+		CF1056F5D4E1088894F6EF8D809B3CB0 /* SKMetaDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKMetaDisposable.m; path = SignalKit/Classes/SKMetaDisposable.m; sourceTree = "<group>"; };
 		D2384E3294EF297D8D5241B358EE4545 /* Pods-SignalKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SignalKit_Example.modulemap"; sourceTree = "<group>"; };
-		DBCEACF7A6B781FA59C17887AD05A221 /* SKSignal+SideEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKSignal+SideEffects.m"; path = "SignalKit/Classes/SKSignal+SideEffects.m"; sourceTree = "<group>"; };
-		DE197F8BCEBDB53423B6083431E57D93 /* SignalKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SignalKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		E3E19EA2AE8936432CA870DBDADD007A /* SKMetaDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKMetaDisposable.m; path = SignalKit/Classes/SKMetaDisposable.m; sourceTree = "<group>"; };
-		E40AD8A3292D468EB99AE2ADD838CC75 /* SignalKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SignalKit-prefix.pch"; sourceTree = "<group>"; };
+		D266329A6147BFF0EF095F1D9BC633A8 /* SKThreadPool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKThreadPool.m; path = SignalKit/Classes/SKThreadPool.m; sourceTree = "<group>"; };
+		D62FF23DA3F7499720593C54F0B6DB6C /* SKSignal+Single.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKSignal+Single.m"; path = "SignalKit/Classes/SKSignal+Single.m"; sourceTree = "<group>"; };
+		DDEA6434654B76B1BA7ADD867E68EE1F /* SKPipe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKPipe.m; path = SignalKit/Classes/SKPipe.m; sourceTree = "<group>"; };
+		E0D2B4CA4D4B61C57369370881D7DE69 /* SKSignal+Dispatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKSignal+Dispatch.m"; path = "SignalKit/Classes/SKSignal+Dispatch.m"; sourceTree = "<group>"; };
+		E2C628393ABE40D2750CED6C81BCFCC3 /* SKBlockDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKBlockDisposable.h; path = SignalKit/Classes/SKBlockDisposable.h; sourceTree = "<group>"; };
+		E3BE8283CBB0C54634BF6EA73821A39C /* SKSignal+Catch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SKSignal+Catch.h"; path = "SignalKit/Classes/SKSignal+Catch.h"; sourceTree = "<group>"; };
 		E47D153EC32935498A16D514D83DD5A5 /* Pods-SignalKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SignalKit_Example-dummy.m"; sourceTree = "<group>"; };
-		E55D60A1C219749A99F080A5CD5FC0D1 /* SKCompoundDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKCompoundDisposable.m; path = SignalKit/Classes/SKCompoundDisposable.m; sourceTree = "<group>"; };
-		E72735972E7C48BE9D36332767606E31 /* SignalKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SignalKit-dummy.m"; sourceTree = "<group>"; };
+		E565029AF551E0A64D6FF22EC2C1EEA3 /* SKSignal+Take.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SKSignal+Take.m"; path = "SignalKit/Classes/SKSignal+Take.m"; sourceTree = "<group>"; };
+		EA3B80A163E55E16FC8958465EEE0B67 /* SKAtomic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKAtomic.h; path = SignalKit/Classes/SKAtomic.h; sourceTree = "<group>"; };
 		EADED60DF900536FA0290D56126A7ADF /* Pods-SignalKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SignalKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		EE273A89AE27872D447C93A11A553371 /* SignalKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SignalKit.framework; path = SignalKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED1643EC2F2C45099A706BBFC22A1BA /* SKMetaDisposable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKMetaDisposable.h; path = SignalKit/Classes/SKMetaDisposable.h; sourceTree = "<group>"; };
+		EEEBBB852FA808CB25311FEEDA90A740 /* SignalKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SignalKit.release.xcconfig; sourceTree = "<group>"; };
 		F23B8DAFB9A4B14DAE1235AF5F17FEE2 /* Pods-SignalKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SignalKit_Example-Info.plist"; sourceTree = "<group>"; };
-		F45E64C9E52109B1E72FB68AD53A7519 /* SignalKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SignalKit.debug.xcconfig; sourceTree = "<group>"; };
 		F6CC57DE4F4C3A7D17C3B70BA609AD2B /* Pods-SignalKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SignalKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F8B04C34FB8DE98741286E6CC48040E4 /* SKTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SKTimer.h; path = SignalKit/Classes/SKTimer.h; sourceTree = "<group>"; };
+		F9DDB52C041EAB713E88B94BC5FBCF28 /* SKBlockDisposable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SKBlockDisposable.m; path = SignalKit/Classes/SKBlockDisposable.m; sourceTree = "<group>"; };
+		FA8091230B1FBC65AC96D7818B953D05 /* SignalKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SignalKit-dummy.m"; sourceTree = "<group>"; };
+		FA877DB9FF454AA510A42BD1B4039A64 /* SignalKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SignalKit.h; path = SignalKit/Classes/SignalKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		842B7929785945EC4483D07BF7CA04A7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0DBFDB0BE55ECF15C1F84AFF11280740 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A4498344BEC968A266F4EDCB5BD77733 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1DFB05586C1D67C33350B39B5DBECA06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7743242D8208FF44BBB360544965125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EE66C2D8C08FE544D94C6AD8B1130A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,12 +176,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D7DC962A0F7F296FE298A8CEA7AE7B7 /* Pod */ = {
+		0D1E3734FEF36A9062451A4C1FCB0C4D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9992077E9C04B358D69A46F0BAB4A1F7 /* LICENSE */,
-				9789E73F94D5E071860F2211B28A27D9 /* README.md */,
-				DE197F8BCEBDB53423B6083431E57D93 /* SignalKit.podspec */,
+				98ADB43BC9939CC590140079BD6828FE /* SignalKit.modulemap */,
+				FA8091230B1FBC65AC96D7818B953D05 /* SignalKit-dummy.m */,
+				3F70C58DD40E4AB7764523588C4B7F3B /* SignalKit-Info.plist */,
+				9914390B1CF6EA28DAA579E90E45C2CA /* SignalKit-prefix.pch */,
+				CBD97571531F4A3C8BFEAEBB6443EB90 /* SignalKit-umbrella.h */,
+				1DE13C2A48A248E38BF9D92C99365D38 /* SignalKit.debug.xcconfig */,
+				EEEBBB852FA808CB25311FEEDA90A740 /* SignalKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SignalKit";
+			sourceTree = "<group>";
+		};
+		1FFCFD5336FFF975D0D66F7B46557670 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C1802785A071DF8E551544CE597E1696 /* LICENSE */,
+				C6A8A27325008919FAD3FB1D828893AF /* README.md */,
+				A197F67374601558EB6649EE5364F0EF /* SignalKit.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -209,21 +228,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		598D842001ECB8EFC45C7E77B62051D7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3E74C37A6B691F6060A2D7229A0313CE /* SignalKit.modulemap */,
-				E72735972E7C48BE9D36332767606E31 /* SignalKit-dummy.m */,
-				605CD1BC48C67A47C182FC97B2D4A8A1 /* SignalKit-Info.plist */,
-				E40AD8A3292D468EB99AE2ADD838CC75 /* SignalKit-prefix.pch */,
-				A213200A08B8D93BE41E3F635FF2A7A8 /* SignalKit-umbrella.h */,
-				F45E64C9E52109B1E72FB68AD53A7519 /* SignalKit.debug.xcconfig */,
-				4A2080C7481594CC108AD418C3DB583A /* SignalKit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SignalKit";
-			sourceTree = "<group>";
-		};
 		8FE1D1CD148B71BDF7F49847BD8AFBAC /* Pods-SignalKit_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,10 +244,10 @@
 			path = "Target Support Files/Pods-SignalKit_Tests";
 			sourceTree = "<group>";
 		};
-		BB1CC5944A5CD47B2B2FFEE87B7C3692 /* Development Pods */ = {
+		A6C096ECDD8F5D1B07ABA6410FEE129D /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F0E990ED9D67F78935D7B5380FD2F623 /* SignalKit */,
+				E7B3BE3527AA41DC1D1962EA0C05DB3C /* SignalKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -252,7 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				BB1CC5944A5CD47B2B2FFEE87B7C3692 /* Development Pods */,
+				A6C096ECDD8F5D1B07ABA6410FEE129D /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				4AA9D33C70679095DF84AF3AD7B9335A /* Products */,
 				246B3E0200A964A946E0D8C8EE925069 /* Targets Support Files */,
@@ -284,48 +288,50 @@
 			path = "Target Support Files/Pods-SignalKit_Example";
 			sourceTree = "<group>";
 		};
-		F0E990ED9D67F78935D7B5380FD2F623 /* SignalKit */ = {
+		E7B3BE3527AA41DC1D1962EA0C05DB3C /* SignalKit */ = {
 			isa = PBXGroup;
 			children = (
-				6CAF74A2AE1D44E339C2E813C1B32B43 /* SignalKit.h */,
-				BA61567B7FB7F587775E5754E447F26E /* SKAtomic.h */,
-				0108AC111241576674FD8A787C85489B /* SKAtomic.m */,
-				8FF25D5D749D3FB62D76649FFC32E68C /* SKBag.h */,
-				88B32AE326D507CD1ACA6D26BF623327 /* SKBag.m */,
-				A7AE2F954C9A0F716AE7AC08AE9FD1BD /* SKBlockDisposable.h */,
-				C7BA10DA3C4DE816E2744630248BF0C8 /* SKBlockDisposable.m */,
-				4A1B9FD417A3044F6D7B0EC2CD51A222 /* SKCompoundDisposable.h */,
-				E55D60A1C219749A99F080A5CD5FC0D1 /* SKCompoundDisposable.m */,
-				1DB1C93DF8E8F182060416324067A581 /* SKDisposable.h */,
-				3A6DFE4E8247B06ABEF6925241D92150 /* SKMetaDisposable.h */,
-				E3E19EA2AE8936432CA870DBDADD007A /* SKMetaDisposable.m */,
-				7FBCD76988B1F480011CC9A247E7F9B3 /* SKPipe.h */,
-				022ABDCCCFDBEE242D13860ACFE2B33A /* SKPipe.m */,
-				42DB741BD75A05EF7AD958EA3715A197 /* SKQueue.h */,
-				4B2A123F765AABD19625D9C5A17B7AAF /* SKQueue.m */,
-				A112F12610FB92029B844FF295956339 /* SKSignal.h */,
-				325C6811C5FE9DCAF9EC16AFF38B0201 /* SKSignal.m */,
-				06BA00C0048F2C95B011AC4E36A7F981 /* SKSignal+Dispatch.h */,
-				8B0CE1FB69F186C6DB5A8D55DDE29BA1 /* SKSignal+Dispatch.m */,
-				514F0A563A03183D0F8A147CA450815E /* SKSignal+Mapping.h */,
-				101B6DE9C59CFB6FBCF0FDBA5D3F60C6 /* SKSignal+Mapping.m */,
-				CBDF3F776415692B369951B19BE9C6C1 /* SKSignal+SideEffects.h */,
-				DBCEACF7A6B781FA59C17887AD05A221 /* SKSignal+SideEffects.m */,
-				655F0F2B13B4C008A97AFE95778A5704 /* SKSignal+Single.h */,
-				8FCBD9D8FE875C1FC22D276659421C30 /* SKSignal+Single.m */,
-				4041A4D5BE87B5D04868F70B8D48795C /* SKSignal+Take.h */,
-				B4887E16F63D5134A931D65CBBA741F9 /* SKSignal+Take.m */,
-				C01A2011C6DB3AF001C7D02B1AB42FB4 /* SKSignal+Timing.h */,
-				294B88501BB571E5F9C9BAE2865F7980 /* SKSignal+Timing.m */,
-				CE0DC330F71CCD187FCC2F1925108E6F /* SKSubscriber.h */,
-				C5F02CB6EE800D5B1AC8E40E7DAB2D80 /* SKSubscriber.m */,
-				A0C7588A18B5685E9E034249CFFC0011 /* SKSubscriberInternal.h */,
-				869F1F6AB15579CBD83363DC369E5AB2 /* SKThreadPool.h */,
-				30C396CCBA97B202C9DB037C8DFE25FD /* SKThreadPool.m */,
-				651034FA8DA1EF33A55F0FF1EED070AE /* SKTimer.h */,
-				A1F9AAEFB4BC22756838FD6F456BDF0B /* SKTimer.m */,
-				1D7DC962A0F7F296FE298A8CEA7AE7B7 /* Pod */,
-				598D842001ECB8EFC45C7E77B62051D7 /* Support Files */,
+				FA877DB9FF454AA510A42BD1B4039A64 /* SignalKit.h */,
+				EA3B80A163E55E16FC8958465EEE0B67 /* SKAtomic.h */,
+				6A44F7084BB1A48AE522EF0E8C2539B7 /* SKAtomic.m */,
+				B171BEA01CAE7E18BD2DC41D6C185D2E /* SKBag.h */,
+				0424BC3BE12F75A1EE3B5C417524B9DA /* SKBag.m */,
+				E2C628393ABE40D2750CED6C81BCFCC3 /* SKBlockDisposable.h */,
+				F9DDB52C041EAB713E88B94BC5FBCF28 /* SKBlockDisposable.m */,
+				8CF626BD0655970DEE9FA3349E9290DB /* SKCompoundDisposable.h */,
+				2136F689CBE78244502220A4EEC14505 /* SKCompoundDisposable.m */,
+				2C8FA5FC4FC065776C44135DCF032F93 /* SKDisposable.h */,
+				EED1643EC2F2C45099A706BBFC22A1BA /* SKMetaDisposable.h */,
+				CF1056F5D4E1088894F6EF8D809B3CB0 /* SKMetaDisposable.m */,
+				2EEF7D3D48DFB7D5CCBC6C6FC735678E /* SKPipe.h */,
+				DDEA6434654B76B1BA7ADD867E68EE1F /* SKPipe.m */,
+				6E131630E5833C724F6234D194EF4A66 /* SKQueue.h */,
+				352010624B72FE14A11ACB3627BD31B1 /* SKQueue.m */,
+				3ADB143A3A5FF107A35819B31647B436 /* SKSignal.h */,
+				BFA01EEBD52DDA7993DBAB45AAE50F6D /* SKSignal.m */,
+				E3BE8283CBB0C54634BF6EA73821A39C /* SKSignal+Catch.h */,
+				C25F2E641F1C4CC5621F4D815889C7BC /* SKSignal+Catch.m */,
+				16AE7524B666CD58CCDA2AE5AD1582DC /* SKSignal+Dispatch.h */,
+				E0D2B4CA4D4B61C57369370881D7DE69 /* SKSignal+Dispatch.m */,
+				46D911B4C6C331BBA91D99B74F99693C /* SKSignal+Mapping.h */,
+				7A7D78D306A443E6B41B817B8F1C5C62 /* SKSignal+Mapping.m */,
+				5BF324A70D2DF5E32E46C2C00C9A5153 /* SKSignal+SideEffects.h */,
+				B180B4F1D80B6DDA3A9218DA305531B2 /* SKSignal+SideEffects.m */,
+				34EF08C057D26710858DB692BA39F388 /* SKSignal+Single.h */,
+				D62FF23DA3F7499720593C54F0B6DB6C /* SKSignal+Single.m */,
+				B608D153D817EA6709BC432EFB2A500A /* SKSignal+Take.h */,
+				E565029AF551E0A64D6FF22EC2C1EEA3 /* SKSignal+Take.m */,
+				2FCF991A4645DEBE5DB314D98986C682 /* SKSignal+Timing.h */,
+				14D6EE22A61CEF9C7F62D6FCE0F22456 /* SKSignal+Timing.m */,
+				6B6B448DBD457ED5B4C4C972F00AE105 /* SKSubscriber.h */,
+				60291D887E7800B6B60FFB46C5F59359 /* SKSubscriber.m */,
+				9B4EBFBE237389B928265FFB1D9E2DF8 /* SKSubscriberInternal.h */,
+				1E622926AA242A59AED7F25ED1D3A419 /* SKThreadPool.h */,
+				D266329A6147BFF0EF095F1D9BC633A8 /* SKThreadPool.m */,
+				F8B04C34FB8DE98741286E6CC48040E4 /* SKTimer.h */,
+				6C5282CB7646791E2C3C2228387FDFF6 /* SKTimer.m */,
+				1FFCFD5336FFF975D0D66F7B46557670 /* Pod */,
+				0D1E3734FEF36A9062451A4C1FCB0C4D /* Support Files */,
 			);
 			name = SignalKit;
 			path = ../..;
@@ -342,31 +348,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF849F7BAF88924CF2438040C0AB1E5A /* Headers */ = {
+		57B4650A527F0385CD2676CD3A6B6067 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E22270CAE379A07FD6C9B0D383730D8D /* SignalKit-umbrella.h in Headers */,
-				445952002C3871A936CE2811200636F3 /* SignalKit.h in Headers */,
-				0C658552320764A9AC9F546867C3E926 /* SKAtomic.h in Headers */,
-				221768BE8F1193DA9186B573F3D47EC8 /* SKBag.h in Headers */,
-				F79D9690C70E0D9B2E252B37EBD8CB82 /* SKBlockDisposable.h in Headers */,
-				BEC1738A9FCE2E02D0E9ECC83BC9DA52 /* SKCompoundDisposable.h in Headers */,
-				1AFA752916B4D4E0B8D88B5D5002E34F /* SKDisposable.h in Headers */,
-				06F9ED77EBA745F853BF808E723F36BC /* SKMetaDisposable.h in Headers */,
-				D6D0D2D2A0BA77DBA3AA11146F418A20 /* SKPipe.h in Headers */,
-				97FCC21B1BE1DF4C93622EB6CE63949F /* SKQueue.h in Headers */,
-				38E13017A542EB5C6F67F0D7A7BAFF2F /* SKSignal+Dispatch.h in Headers */,
-				90E50D5CA9127A6939D55DF0D7950A50 /* SKSignal+Mapping.h in Headers */,
-				52447317D9E14819A154275562AD62AF /* SKSignal+SideEffects.h in Headers */,
-				A863D9AC331A93ED9CA632174D8BAE18 /* SKSignal+Single.h in Headers */,
-				D303533E1B95B6F858A80A21002D18F9 /* SKSignal+Take.h in Headers */,
-				6B2234BB31890D92A0D759F2DC09BFDD /* SKSignal+Timing.h in Headers */,
-				0FC8FCDA34E73330BB3167B638B57600 /* SKSignal.h in Headers */,
-				7FAD9F52050DC337D2643105E7C6D20B /* SKSubscriber.h in Headers */,
-				70DB1ADF1D4A18C2DE20CEF361C2A92D /* SKSubscriberInternal.h in Headers */,
-				538394F413C04FDFCB652EC0780567A4 /* SKThreadPool.h in Headers */,
-				78A08CB21CB05907A457EDBA89B706E0 /* SKTimer.h in Headers */,
+				95988ABB117098CD95D9D9611F590245 /* SignalKit-umbrella.h in Headers */,
+				A3B479E36A7E9B37E40D8DAF3290159C /* SignalKit.h in Headers */,
+				8EC4FFAB66178FD870C17BDB93943DA5 /* SKAtomic.h in Headers */,
+				8227060FCEFC802A2C9BC5356B6E0FAF /* SKBag.h in Headers */,
+				3C5BE3F0DF64273F3C6921EDE2EC536F /* SKBlockDisposable.h in Headers */,
+				E18CA4EBF77B096DE82DBDDD1B2AA105 /* SKCompoundDisposable.h in Headers */,
+				4CE40542B8994AB00C2208FB78D8B707 /* SKDisposable.h in Headers */,
+				41E10848484221CF4170E610691F393C /* SKMetaDisposable.h in Headers */,
+				915206A4BE87F892BF9F9E6372F5781E /* SKPipe.h in Headers */,
+				7ECCD5E7F6AE821033D606F603103232 /* SKQueue.h in Headers */,
+				A4F2B2EDEADB8B54EEB466A466C20B1A /* SKSignal+Catch.h in Headers */,
+				8A149C46280098FB77F26C5A5C11CD14 /* SKSignal+Dispatch.h in Headers */,
+				327609837F3EB9D2A1FD5337BB7B085C /* SKSignal+Mapping.h in Headers */,
+				1FDFEF502E780274DD53EFD18BF507A7 /* SKSignal+SideEffects.h in Headers */,
+				A0CA1A7F669AB384419C0F75D924696E /* SKSignal+Single.h in Headers */,
+				0C6DDB7E4663E4C4308EA2F6F3C59976 /* SKSignal+Take.h in Headers */,
+				E96E0950CB825E274BB9483360145C01 /* SKSignal+Timing.h in Headers */,
+				C4A4F6B7E7861395C7E654E61832C658 /* SKSignal.h in Headers */,
+				E67B18D2FCC98985C162A902D8A51128 /* SKSubscriber.h in Headers */,
+				228BEB66A5D5283D57F463224DC9240E /* SKSubscriberInternal.h in Headers */,
+				DE666A3ADE6529E7ACF15E36CA61FDC2 /* SKThreadPool.h in Headers */,
+				2214D5EB79A857CCF67626DBE9F14999 /* SKTimer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +400,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E62025116E22E5DDA20646330EE42B72 /* PBXTargetDependency */,
+				09B7614E4F21CC00A46864585D41C37F /* PBXTargetDependency */,
 			);
 			name = "Pods-SignalKit_Tests";
 			productName = "Pods-SignalKit_Tests";
@@ -412,7 +419,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				00730B7DB475253A62EF7A561CE0D888 /* PBXTargetDependency */,
+				383AB30B863DC1DF01B88929DEE0A349 /* PBXTargetDependency */,
 			);
 			name = "Pods-SignalKit_Example";
 			productName = "Pods-SignalKit_Example";
@@ -421,12 +428,12 @@
 		};
 		AD9E694EF983F10C04917FD59E58F316 /* SignalKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E8A5670C66AE4FF27C7F4A3A069080F1 /* Build configuration list for PBXNativeTarget "SignalKit" */;
+			buildConfigurationList = 5983394E6779A7A5BDC9AD7FEFE406C9 /* Build configuration list for PBXNativeTarget "SignalKit" */;
 			buildPhases = (
-				AF849F7BAF88924CF2438040C0AB1E5A /* Headers */,
-				F4CE76542A9973A160CCB5EF27EC43B4 /* Sources */,
-				842B7929785945EC4483D07BF7CA04A7 /* Frameworks */,
-				F36109EC3FBB0FFE3EB78B504822871E /* Resources */,
+				57B4650A527F0385CD2676CD3A6B6067 /* Headers */,
+				2EB41C9A62F67CFB44968CB1A7329C67 /* Sources */,
+				C7743242D8208FF44BBB360544965125 /* Frameworks */,
+				74A720594D1BEB3258503AFBE237DEB1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -481,7 +488,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F36109EC3FBB0FFE3EB78B504822871E /* Resources */ = {
+		74A720594D1BEB3258503AFBE237DEB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -491,6 +498,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2EB41C9A62F67CFB44968CB1A7329C67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E5360B6A7D5BEC64043497EF1EED2B /* SignalKit-dummy.m in Sources */,
+				F5B45E330A9B3236E0975DCF6B755ECC /* SKAtomic.m in Sources */,
+				96A2B01E532B0720F5E92515568D4CBE /* SKBag.m in Sources */,
+				B79706EBE8FD9842EB41F4BDC5E5D916 /* SKBlockDisposable.m in Sources */,
+				47FC6B3E5EC66C625F492B9F7ED58E89 /* SKCompoundDisposable.m in Sources */,
+				FA44DDC6CC900A6AB0E91D70A4078895 /* SKMetaDisposable.m in Sources */,
+				36A400D469F493F399DBB613BBBBC442 /* SKPipe.m in Sources */,
+				91C63C09E84A8C39C412766CC703BF10 /* SKQueue.m in Sources */,
+				991D65B0BD58F2F12A394544E31CB271 /* SKSignal+Catch.m in Sources */,
+				06E225BA6C238C08A2E3F4FE06C78A0F /* SKSignal+Dispatch.m in Sources */,
+				F1B3E8418B4E20C8182D0D9193B4D69C /* SKSignal+Mapping.m in Sources */,
+				D9EAA60D35190A076AD6234F579A9A38 /* SKSignal+SideEffects.m in Sources */,
+				4AC68038F48F473DCA9F256F86EC0DB3 /* SKSignal+Single.m in Sources */,
+				1E245717EA52CD7421D226FFFC646108 /* SKSignal+Take.m in Sources */,
+				A600E49676023F26E25EAAB82B3C3385 /* SKSignal+Timing.m in Sources */,
+				75560E9F2C55965116F4CAB77CCEC0A1 /* SKSignal.m in Sources */,
+				6DDC02141C42387126987C6E6C1C2983 /* SKSubscriber.m in Sources */,
+				EC006FE945085A52B2C6B2AD8AFB5EED /* SKThreadPool.m in Sources */,
+				314A47CE3A1A196D2CC9BC459CF3E2B5 /* SKTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		56566BA5D12B96AB64B74A5B289D1166 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -507,45 +540,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4CE76542A9973A160CCB5EF27EC43B4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C08E256F469D3B15146D3851C19319C /* SignalKit-dummy.m in Sources */,
-				ABA16E7AD75A5E962EC435F3136F14F5 /* SKAtomic.m in Sources */,
-				418E3FD8B7601545DFBF138D489D51A9 /* SKBag.m in Sources */,
-				E96F66BC3B4977046158E96B7BB7CB11 /* SKBlockDisposable.m in Sources */,
-				CEC528E5DA2D06C822A394AAD787F893 /* SKCompoundDisposable.m in Sources */,
-				FE629DA41A761607BF7F348E0798A18F /* SKMetaDisposable.m in Sources */,
-				EA5DBCC86AC283757AF2870DA255239A /* SKPipe.m in Sources */,
-				D3CA60D8688FADF3FACA6848A2167AFE /* SKQueue.m in Sources */,
-				0BFB8935AA1312E23C60586A3754C393 /* SKSignal+Dispatch.m in Sources */,
-				7A7BAF594DD84925153D680D72EE585B /* SKSignal+Mapping.m in Sources */,
-				E58FA7B5902A15607472B1B780DB4ACC /* SKSignal+SideEffects.m in Sources */,
-				12EF159FC2DEF9ECD86835B8795BB1E7 /* SKSignal+Single.m in Sources */,
-				80C758A6BD90BA620F495CE37D8D10CF /* SKSignal+Take.m in Sources */,
-				C5DA420BDC418EA9B8603C0905790B5B /* SKSignal+Timing.m in Sources */,
-				2C9F4F8220563BEFEA0BEAB44E70A444 /* SKSignal.m in Sources */,
-				D7F2044D646837FA3B172134BEDC7FA9 /* SKSubscriber.m in Sources */,
-				A21DEDBE241A6E3FEC0566173D75F90A /* SKThreadPool.m in Sources */,
-				AD4B1DDD686DC87B31A999AD23EA044B /* SKTimer.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00730B7DB475253A62EF7A561CE0D888 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SignalKit;
-			target = AD9E694EF983F10C04917FD59E58F316 /* SignalKit */;
-			targetProxy = 0DAA9CF53E79A44EDC6D08EDAE5B6EEE /* PBXContainerItemProxy */;
-		};
-		E62025116E22E5DDA20646330EE42B72 /* PBXTargetDependency */ = {
+		09B7614E4F21CC00A46864585D41C37F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-SignalKit_Example";
 			target = 741350860289F4463B83CBBDC97246BE /* Pods-SignalKit_Example */;
-			targetProxy = 7EBB6EDDB1BBDBEB7D070F26200E61C3 /* PBXContainerItemProxy */;
+			targetProxy = 746DEB92FF0437E27581116620572605 /* PBXContainerItemProxy */;
+		};
+		383AB30B863DC1DF01B88929DEE0A349 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SignalKit;
+			target = AD9E694EF983F10C04917FD59E58F316 /* SignalKit */;
+			targetProxy = F3981CA36278C4D553DEAA27FF3E60E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -616,37 +624,6 @@
 			};
 			name = Debug;
 		};
-		36871EC0EC5D58B22202393002583B9D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A2080C7481594CC108AD418C3DB583A /* SignalKit.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SignalKit/SignalKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SignalKit/SignalKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SignalKit/SignalKit.modulemap";
-				PRODUCT_MODULE_NAME = SignalKit;
-				PRODUCT_NAME = SignalKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		76854C43CC6DFD16CBB2BB4FA3404548 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A8905B4753163CEA502BE558E973EBC /* Pods-SignalKit_Example.debug.xcconfig */;
@@ -710,6 +687,67 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		B5AB2F12CFEC88A0B77F9E2E77D7C109 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DE13C2A48A248E38BF9D92C99365D38 /* SignalKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SignalKit/SignalKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SignalKit/SignalKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SignalKit/SignalKit.modulemap";
+				PRODUCT_MODULE_NAME = SignalKit;
+				PRODUCT_NAME = SignalKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B82EB3E4408E269E986F71A09FC0F281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEEBBB852FA808CB25311FEEDA90A740 /* SignalKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SignalKit/SignalKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SignalKit/SignalKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SignalKit/SignalKit.modulemap";
+				PRODUCT_MODULE_NAME = SignalKit;
+				PRODUCT_NAME = SignalKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -839,36 +877,6 @@
 			};
 			name = Release;
 		};
-		F968A8ACB06605059A2D4FA218634676 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F45E64C9E52109B1E72FB68AD53A7519 /* SignalKit.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SignalKit/SignalKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SignalKit/SignalKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SignalKit/SignalKit.modulemap";
-				PRODUCT_MODULE_NAME = SignalKit;
-				PRODUCT_NAME = SignalKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -877,6 +885,15 @@
 			buildConfigurations = (
 				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
 				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5983394E6779A7A5BDC9AD7FEFE406C9 /* Build configuration list for PBXNativeTarget "SignalKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5AB2F12CFEC88A0B77F9E2E77D7C109 /* Debug */,
+				B82EB3E4408E269E986F71A09FC0F281 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -895,15 +912,6 @@
 			buildConfigurations = (
 				8C4A469FA40175BE58CA39CCC7C8FF3D /* Debug */,
 				CAB692FABD21C8264B2F665F2A716120 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E8A5670C66AE4FF27C7F4A3A069080F1 /* Build configuration list for PBXNativeTarget "SignalKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F968A8ACB06605059A2D4FA218634676 /* Debug */,
-				36871EC0EC5D58B22202393002583B9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
