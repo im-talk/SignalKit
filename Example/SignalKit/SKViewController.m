@@ -9,6 +9,9 @@
 #import "SKViewController.h"
 #import <SignalKit/SignalKit.h>
 #import "SKSignal+Catch.h"
+#import "SKSignal+Meta.h"
+
+>>>>>>> 4ac8ecd0afba5db83f5fa059b42bbd827bba1a85
 
 @interface SKViewController ()
 
@@ -142,8 +145,27 @@
 //        }];
 //
 //    }];
-
     
+//
+//    SKSignal *signal = [SKSignal signalWithGenerator:^id<SKDisposable> _Nullable(SKSubscriber * _Nonnull subscriber) {
+//        [subscriber putNext:@1];
+//        [subscriber putNext:@2];
+//        [subscriber putCompletion];
+//        [subscriber putError:nil];
+//        [subscriber putCompletion];
+//        [subscriber putNext:@1];
+//        [subscriber putNext:@(1)];
+//        return nil;
+//    }];
+//
+//    [signal startWithNext:^(id  _Nullable value) {
+//        NSLog(@"%@", value);
+//    } error:^(id  _Nullable error) {
+//        NSLog(@"%@", error);
+//    } completed:^{
+//
+//    }];
+>>>>>>> 4ac8ecd0afba5db83f5fa059b42bbd827bba1a85
 
 //    SKThreadPoolQueue *queue = [self.threadPool nextQueue];
 //    for (int i = 0; i < 10; i ++) {
@@ -178,6 +200,32 @@
 //    });
 
     
+    self.signal = [SKSignal defer:^SKSignal * _Nonnull{
+//        NSLog(@"123");
+        
+        return [SKSignal signalWithGenerator:^id<SKDisposable> _Nullable(SKSubscriber * _Nonnull subscriber) {
+            [subscriber putNext:@1];
+            [subscriber putCompletion];
+            return nil;
+        }];
+    }];
+    
+    self.signal = [[SKSignal signalWithGenerator:^id<SKDisposable> _Nullable(SKSubscriber * _Nonnull subscriber) {
+        [subscriber putNext:@1];
+        [subscriber putCompletion];
+        return nil;
+    }] onStart:^{
+        NSLog(@"123");
+
+    }];
+    
+    [ self.signal startWithNext:^(id  _Nullable value) {
+        NSLog(@"%@", value);
+    } error:^(id  _Nullable error) {
+        NSLog(@"%@", error);
+    } completed:^{
+        NSLog(@"completed");
+    }];
 }
 
 - (void)didReceiveMemoryWarning
