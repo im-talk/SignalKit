@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		046A75F7271D93F000F4A133 /* SKSignal+Meta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKSignal+Meta.h"; sourceTree = "<group>"; };
 		046A75F8271D93F000F4A133 /* SKSignal+Meta.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SKSignal+Meta.m"; sourceTree = "<group>"; };
-		22C7E5863F2E33CF9D6FE5E7 /* SignalKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SignalKit.podspec; path = ../SignalKit.podspec; sourceTree = "<group>"; };
+		22C7E5863F2E33CF9D6FE5E7 /* SignalKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SignalKit.podspec; path = ../SignalKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		56A19FFD0A7F737AD7D9843D /* Pods-SignalKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignalKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SignalKit_Tests/Pods-SignalKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SignalKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignalKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
